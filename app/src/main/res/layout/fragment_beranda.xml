@@ -5,51 +5,71 @@
     android:layout_height="match_parent"
     tools:context=".fragment.BerandaFragment">
 
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="267dp"
-        android:layout_height="59dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="150dp"
-        android:text="GREEN HOUSE"
-        android:textStyle="bold"
-        android:textSize="18dp"/>
 
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="267dp"
-        android:layout_height="59dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="250dp"
-        android:text="KLIMATOLOGI"
-        android:textStyle="bold"
-        android:textSize="18dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgrdaunhijau"
+        android:padding="10dp">
 
-    <ImageView
-        android:layout_width="43dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="160dp"
-        android:src="@drawable/logoproject"/>
 
-    <ImageView
-        android:layout_width="43dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="160dp"
-        android:src="@drawable/logohimatro"/>
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:text="  Wellcome to Gisting Project"
+            android:textColor="@color/ijotua"
+            android:textSize="25dp"
+            android:textStyle="bold" />
 
-    <ImageView
-        android:layout_width="43dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="260dp"
-        android:src="@drawable/logoproject"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="267dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="300dp"
+            android:text="GREEN HOUSE"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
-    <ImageView
-        android:layout_width="43dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="260dp"
-        android:src="@drawable/logohimatro"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="267dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="400dp"
+            android:text="KLIMATOLOGI"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="310dp"
+            android:src="@drawable/logoproject" />
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="310dp"
+            android:src="@drawable/logohimatro" />
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="410dp"
+            android:src="@drawable/logoproject" />
+
+        <ImageView
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="410dp"
+            android:src="@drawable/logohimatro" />
+
+    </FrameLayout>
 
 
 </FrameLayout>
