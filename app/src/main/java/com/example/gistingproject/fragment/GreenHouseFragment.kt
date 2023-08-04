@@ -5,56 +5,47 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.gistingproject.R
+import com.example.gistingproject.adapter.GreenHouseAdapter
+import com.example.gistingproject.user.ListGreenHouse
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [GreenHouseFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class GreenHouseFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
-
+    private lateinit var recyclerView: RecyclerView
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_green_house, container, false)
-    }
+        val view = inflater.inflate(R.layout.fragment_green_house, container, false)
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment GreenHouseFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            GreenHouseFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        recyclerView = view.findViewById(R.id.rvGreenHouse)
+        recyclerView.layoutManager = LinearLayoutManager(context)
+
+        // Contoh data untuk ditampilkan di RecyclerView
+        val dataListGreenHouse = listOf(
+            ListGreenHouse("Senso Suhu", R.drawable.iconsuhu),
+            ListGreenHouse("Sensor Kelembapan",R.drawable.iconkelembapan),
+            ListGreenHouse("Sensor PH", R.drawable.iconph),
+            ListGreenHouse("Sensor Arah angin", R.drawable.iconarahangin),
+            ListGreenHouse("Sensor Anemometer", R.drawable.iconanemometer),
+            ListGreenHouse("Battery", R.drawable.iconbattery),
+            ListGreenHouse("Sensor Curah Hujan", R.drawable.iconcurahhujan),
+            ListGreenHouse("Sensor Soil Moisture", R.drawable.iconsoilmoisture),
+            ListGreenHouse("Sensor tds", R.drawable.icontds),
+            ListGreenHouse("Sensor Tekanan Udara", R.drawable.icontekananudara),
+            ListGreenHouse("Tabel", R.drawable.icontabel),
+            ListGreenHouse("Grafik", R.drawable.icongrafik)
+
+            // ... tambahkan item lainnya sesuai kebutuhan
+        )
+
+        val adapter = GreenHouseAdapter(dataListGreenHouse)
+        recyclerView.adapter = adapter
+
+        return view
     }
 }
+

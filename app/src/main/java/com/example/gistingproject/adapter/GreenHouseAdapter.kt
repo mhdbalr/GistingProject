@@ -9,14 +9,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.gistingproject.R
 import com.example.gistingproject.user.ListGreenHouse
 
-class GreenHouseAdapter(var listStudent : ArrayList<ListGreenHouse>): RecyclerView.Adapter<GreenHouseAdapter.ViewHolder>(){
+class GreenHouseAdapter(var listStudent: List<ListGreenHouse>): RecyclerView.Adapter<GreenHouseAdapter.ViewHolder>(){
     class ViewHolder (view : View) : RecyclerView.ViewHolder(view) {
         var nameGreenHouse = view.findViewById<TextView>(R.id.tvNamaSensor)
         var imgGreenHouse = view.findViewById<ImageView>(R.id.ivGreenHouse)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GreenHouseAdapter.ViewHolder {
-        var view = LayoutInflater.from(parent.context).inflate(R.layout.item_greenhouse, parent, false)
+        val view = LayoutInflater.from(parent.context).
+        inflate(R.layout.item_greenhouse, parent, false)
         return ViewHolder(view)
     }
 
