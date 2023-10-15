@@ -26,18 +26,23 @@ class GreenHouseFragment : Fragment() {
 
         // Contoh data untuk ditampilkan di RecyclerView
         val dataListGreenHouse = listOf(
-            ListGreenHouse("Senso Suhu", R.drawable.iconsuhu),
+            ListGreenHouse("Sensor Suhu", R.drawable.iconsuhu),
+            ListGreenHouse("Sensor Ketinggian", R.drawable.iconsuhu),
+            ListGreenHouse("Sensor Kecepatan Angin", R.drawable.iconsuhu),
             ListGreenHouse("Sensor Kelembapan",R.drawable.iconkelembapan),
             ListGreenHouse("Sensor PH", R.drawable.iconph),
             ListGreenHouse("Sensor Arah angin", R.drawable.iconarahangin),
-            ListGreenHouse("Sensor Anemometer", R.drawable.iconanemometer),
+            ListGreenHouse("Sensor Intensitas Air Hujan", R.drawable.iconanemometer),
             ListGreenHouse("Battery", R.drawable.iconbattery),
+            ListGreenHouse("Sensor Arus Listrik", R.drawable.iconsuhu),
             ListGreenHouse("Sensor Curah Hujan", R.drawable.iconcurahhujan),
             ListGreenHouse("Sensor Soil Moisture", R.drawable.iconsoilmoisture),
+            ListGreenHouse("Sensor Intensitas Cahaya", R.drawable.iconsuhu),
+            ListGreenHouse("Sensor Berat", R.drawable.iconsuhu),
+            ListGreenHouse("Sensor Infrared", R.drawable.iconsuhu),
+            ListGreenHouse("Sensor Intensitas Arus Air", R.drawable.iconsuhu),
             ListGreenHouse("Sensor tds", R.drawable.icontds),
-            ListGreenHouse("Sensor Tekanan Udara", R.drawable.icontekananudara),
-            ListGreenHouse("Tabel", R.drawable.icontabel),
-            ListGreenHouse("Grafik", R.drawable.icongrafik)
+            ListGreenHouse("Sensor Tekanan Udara", R.drawable.icontekananudara)
 
             // ... tambahkan item lainnya sesuai kebutuhan
         )

@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_berandaFragment_to_greenHouseFragment"
             app:destination="@id/greenHouseFragment" />
+        <action
+            android:id="@+id/action_berandaFragment_to_klimatologiFragment"
+            app:destination="@id/klimatologiFragment" />
     </fragment>
     <fragment
         android:id="@+id/splashFragment2"
@@ -28,4 +31,9 @@
             android:id="@+id/action_splashFragment2_to_berandaFragment"
             app:destination="@id/berandaFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/klimatologiFragment"
+        android:name="com.example.gistingproject.fragment.KlimatologiFragment"
+        android:label="fragment_klimatologi"
+        tools:layout="@layout/fragment_klimatologi" />
 </navigation>

@@ -50,6 +50,7 @@
             android:text="@string/graph" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btntoKlimatologi"
             android:layout_width="267dp"
             android:layout_height="59dp"
             android:layout_gravity="center_horizontal"
